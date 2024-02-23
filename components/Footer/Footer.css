@@ -1,0 +1,42 @@
+:root{
+  --background-color-dark: #232222;
+  --color-text-dark: #fff;
+  --color-text-span-dark: #888;
+  --background-color-light: #FFFFFF;
+  --color-text-light: #000;
+  --color-text-span-light: #666;
+
+
+
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color-dark);
+  -webkit-box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  color: var(--color-text-dark);
+  & span {
+    color: var(--color-text-span-dark);
+  }
+}
+
+@media (prefers-color-scheme: light){
+  footer{
+    background-color: var(--background-color-light);
+    color: var(--color-text-light);
+
+    & span {
+      color: var(--color-text-span-light);
+    }
+  }
+}
+
